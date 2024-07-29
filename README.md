@@ -17,7 +17,7 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 ## Links
 
 - Solution URL: [Add solution URL here](https://github.com/chizy21/social-links-profile)
-- Live Site URL: [Add live site URL here](https://gleeful-scone-e24abf.netlify.app/)
+- Live Site URL: [Add live site URL here](https://chic-cucurucho-13b629.netlify.app/)
 
 ## My process
 

@@ -1,0 +1,179 @@
+/* -------  */
+/* reset    */
+/* -------  */
+
+/* https://piccalil.li/blog/a-modern-css-reset */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*  Reset Margins  */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+}
+
+/* Default Colors */
+body {
+  --color-green: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey: hsl(0, 0%, 20%);
+  --color-darkgrey: hsl(0, 0%, 12%);
+  --color-black: hsl(0, 0%, 0%);
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.container {
+  display: flex;
+  width: 599px;
+  padding: 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  flex-shrink: 0;
+  margin: auto;
+}
+h1 {
+  color: var(--White, var(--White, #fff));
+  text-align: center;
+  /* Heading */
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 36px */
+}
+h2 {
+  color: var(--Neon-Green, var(--Neon-Green, #c4f82a));
+  text-align: center;
+  /* Body (Bold) */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 21px */
+}
+
+p {
+  align-self: stretch;
+  color: var(--White, var(--White, #fff));
+  text-align: center;
+  /* Body (Regular) */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
+
+a {
+  display: flex;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 8px;
+  background: var(--Grey, #333);
+  color: var(--White, #fff);
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.nav-bar a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+a:hover {
+  background-color: var(--color-green);
+  color: var(--color-black);
+  transition: 0.4s;
+  width: 100%;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.attribution a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  display: inline-block;
+}
